@@ -27,7 +27,10 @@ $count = 1;
 	<input id="next_round" type="submit" value="Next Round" />
 	<div id="words_left">Words left: <span class="num"></span></div>
 
-	<a class="back_link" href="index.php">Back to home</a>
+	<div class="controls">
+		<a href="index.php">Back to home</a> &bull;
+		<a id="start_over" href="#">Start over</a>
+	</div>
 
 	<input id="text_length" name="text_length" type="hidden" value="<?php echo $text_length; ?>" />
 </div>

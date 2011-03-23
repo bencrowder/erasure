@@ -1,7 +1,7 @@
-var round = 1;
-var words = [1, 2, 3, 4, 5, 6, 7];
-var text_length = 7;
-var words_left = text_length;
+var round;
+var words;
+var text_length;
+var words_left;
 
 function erase(id) {
 	var span = "#" + id;
@@ -47,18 +47,34 @@ function erasewords() {
 	return false;
 }
 
-$(document).ready(function() {
-	// get length of text
-	text_length = $("#text_length").val();
+function init() {
 	words_left = text_length;
 
 	// update words_left
 	$("#words_left .num").html(words_left);
 
 	// load words[]
+	words = [];
 	for (i=1; i<text_length; i++) {
 		words.push(i);
 	}
 
+	round = 1;
+}
+
+$(document).ready(function() {
+	// get length of text
+	text_length = $("#text_length").val();
+
+	init();
+
 	$("#next_round").click(erasewords);
+
+	$("#start_over").click(function() {
+		$("#paragraph span").removeClass("erased");
+
+		init();
+
+		return false;
+	});
 });
