@@ -7,9 +7,27 @@ function erase(id) {
 	var span = "#" + id;
 
 	var width = $(span).width();
+	var height = $(span).height();
 
 	$(span).addClass("erased");
 	$(span).css("width", width);
+	$(span).css("height", height);
+
+	// when you click on an erased word, briefly show the hint
+	$(span).click(function() {
+		$(this).css("opacity", "0");
+		$(this).removeClass("erased");
+		$(this).animate({
+			opacity: .5
+		}, 300, function() {
+			$(this).animate({
+				opacity: 0
+			}, 300, function() {
+				$(this).addClass("erased");
+				$(this).css("opacity", "1");
+			});
+		});
+	});
 }
 
 function erasewords() {
@@ -76,10 +94,5 @@ $(document).ready(function() {
 		init();
 
 		return false;
-	});
-
-	$(".erased").click(function() {
-		console.log("foo");
-		$(this).removeClass("erased");
 	});
 });

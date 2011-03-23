@@ -12,6 +12,7 @@ input[type="submit"]		{ float: right; }
 #paragraph					{ font-size: 28px; line-height: 1.5em; border-bottom: solid 1px #ccc; padding-bottom: 1em; margin-bottom: 1em; }
 
 .erased						{ display: inline-block; text-indent: -4000px; border-bottom: dotted 1px #ccc; }
+.erased:hover				{ cursor: pointer; }
 
 .controls					{ font-size: .8em; color: #999; }
 .controls a					{ color: #666; text-decoration: none; border-bottom: dotted 1px #666; }
