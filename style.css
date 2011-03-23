@@ -1,0 +1,16 @@
+body						{ font-family: Georgia, serif; border-top: solid 15px #345; margin: 0; line-height: 1.4em; }
+
+#page						{ width: 600px; margin: 25px auto; }
+
+h1							{ font-weight: normal; font-size: 21px; }
+p							{ font-size: .9em; color: #666; }
+
+textarea					{ width: 600px; height: 150px; border: solid 1px #999; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-bottom: 10px; font-size: 1.2em; line-height: 1.4em; font-family: Georgia, serif; padding: 10px; }
+
+input[type="submit"]		{ float: right; }
+
+#paragraph					{ font-size: 28px; line-height: 1.5em; border-bottom: solid 1px #ccc; padding-bottom: .5em; margin-bottom: .5em; }
+
+.erased						{ display: inline-block; text-indent: -4000px; }
+
+a.backlink					{ font-size: .8em; color: #666; text-decoration: none; border-bottom: dotted 1px #666; }
