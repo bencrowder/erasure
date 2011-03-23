@@ -18,7 +18,7 @@ function erase(id) {
 		$(this).css("opacity", "0");
 		$(this).removeClass("erased");
 		$(this).animate({
-			opacity: .5
+			opacity: .25
 		}, 300, function() {
 			$(this).animate({
 				opacity: 0
