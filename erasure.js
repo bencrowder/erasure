@@ -91,6 +91,8 @@ function init() {
 	round = 1;
 
 	$("#the_end").hide();
+	$("#paragraph").show();
+	$("#next_round").attr("disabled", "");
 }
 
 $(document).ready(function() {
