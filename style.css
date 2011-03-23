@@ -9,9 +9,9 @@ textarea					{ width: 600px; height: 150px; border: solid 1px #999; -moz-border-
 
 input[type="submit"]		{ float: right; }
 
-#paragraph					{ font-size: 28px; line-height: 1.5em; border-bottom: solid 1px #ccc; padding-bottom: .5em; margin-bottom: .5em; }
+#paragraph					{ font-size: 28px; line-height: 1.5em; border-bottom: solid 1px #ccc; padding-bottom: 1em; margin-bottom: 1em; }
 
-.erased						{ display: inline-block; text-indent: -4000px; }
+.erased						{ display: inline-block; text-indent: -4000px; border-bottom: dotted 1px #ccc; }
 
 .controls					{ font-size: .8em; color: #999; }
 .controls a					{ color: #666; text-decoration: none; border-bottom: dotted 1px #666; }

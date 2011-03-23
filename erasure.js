@@ -77,4 +77,9 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+	$(".erased").click(function() {
+		console.log("foo");
+		$(this).removeClass("erased");
+	});
 });
