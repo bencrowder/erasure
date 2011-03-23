@@ -31,6 +31,17 @@ function erase(id) {
 }
 
 function erasewords() {
+	// end game
+	if (words_left == 0) {
+		$("#next_round").attr("disabled", "disabled");
+
+		$("#paragraph").fadeOut(125, function() {
+			$("#the_end").fadeIn(125);
+		});
+
+		return;
+	}
+
 	// calculate number of words to erase this round
 	var num_words = parseInt(round / 3) + 2;
 	
@@ -78,6 +89,8 @@ function init() {
 	}
 
 	round = 1;
+
+	$("#the_end").hide();
 }
 
 $(document).ready(function() {
@@ -88,7 +101,7 @@ $(document).ready(function() {
 
 	$("#next_round").click(erasewords);
 
-	$("#start_over").click(function() {
+	$(".start_over").click(function() {
 		$("#paragraph span").removeClass("erased");
 
 		init();

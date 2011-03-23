@@ -9,13 +9,20 @@ textarea					{ width: 600px; height: 150px; border: solid 1px #999; -moz-border-
 
 input[type="submit"]		{ float: right; }
 
-#paragraph					{ font-size: 28px; line-height: 1.5em; border-bottom: solid 1px #ccc; padding-bottom: 1em; margin-bottom: 1em; }
+#paragraph					{ font-size: 28px; line-height: 1.5em; }
 
 .erased						{ display: inline-block; text-indent: -4000px; border-bottom: dotted 1px #ccc; }
 .erased:hover				{ cursor: pointer; }
+
+#sub						{ margin-top: 1.5em; border-top: solid 1px #ccc; padding-top: 1.5em; }
 
 .controls					{ font-size: .8em; color: #999; }
 .controls a					{ color: #666; text-decoration: none; border-bottom: dotted 1px #666; }
 
 #words_left					{ float: right; margin-right: 15px; text-align: right; }
 .num						{ font-weight: bold; }
+
+#the_end					{ margin-bottom: 1em; background: #eee; padding: 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; display: hidden; }
+#the_end h2					{ margin-top: 0; font-size: 18px; font-weight: normal; }
+#the_end p					{ margin-bottom: 0; }
+#the_end a					{ text-decoration: none; color: #333; border-bottom: dotted 1px #333; }
