@@ -13,4 +13,7 @@ input[type="submit"]		{ float: right; }
 
 .erased						{ display: inline-block; text-indent: -4000px; }
 
-a.backlink					{ font-size: .8em; color: #666; text-decoration: none; border-bottom: dotted 1px #666; }
+a.back_link					{ font-size: .8em; color: #666; text-decoration: none; border-bottom: dotted 1px #666; }
+
+#words_left					{ float: right; margin-right: 15px; text-align: right; }
+.num						{ font-weight: bold; }

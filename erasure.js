@@ -39,6 +39,9 @@ function erasewords() {
 		words_left--;
 	}
 
+	// update words_left
+	$("#words_left .num").html(words_left);
+
 	round++;
 
 	return false;
@@ -49,10 +52,13 @@ $(document).ready(function() {
 	text_length = $("#text_length").val();
 	words_left = text_length;
 
+	// update words_left
+	$("#words_left .num").html(words_left);
+
 	// load words[]
 	for (i=1; i<text_length; i++) {
 		words.push(i);
 	}
 
-	$("#nextround").click(erasewords);
+	$("#next_round").click(erasewords);
 });
