@@ -2,6 +2,8 @@
 
 $text = $_POST["text"];
 
+$text = str_replace("\r\n", " [[[LINEBREAK]]] ", $text);
+
 // split the words into an array
 $words = explode(" ", $text);
 
@@ -18,8 +20,13 @@ $count = 1;
 	<div id="paragraph">
 	<?php
 		foreach ($words as $word) {
-			echo "<span id='$count'>$word</span> ";
-			$count++;
+			if ($word == "[[[LINEBREAK]]]") {
+				echo "<br/>";
+			} else if ($word != "") {
+				$word = trim($word);
+				echo "<span id='$count'>$word</span> ";
+				$count++;
+			}
 		}
 	?>
 	</div>
